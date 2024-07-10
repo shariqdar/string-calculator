@@ -19,4 +19,10 @@ describe('String Calculator', function() {
         expect(c3.calculate.bind(c3, '//;\n-1;-2')).to.throw('negative numbers not allowed -1, -2');
         done();
     });
+
+    it('4) Check on two digit numbers', function(done) {
+        let c4 = new StringCalculator("//;\n11;22");
+        expect(c4.calculate()).to.equal(33);
+        done();
+    });
 });
