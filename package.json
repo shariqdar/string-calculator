@@ -1,0 +1,15 @@
+{
+  "name": "string-calculator",
+  "version": "1.0.0",
+  "description": "this package will calculate all numbers in string",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^8.3.2"
+  }
+}
