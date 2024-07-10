@@ -16,7 +16,7 @@ describe('String Calculator', function() {
 
     it('3) Negative Numbers', function(done) {
         let c3 = new StringCalculator("//;\n-1;-2");
-        expect(c3.calculate()).to.throw('negative numbers not allowed -1, -2');
+        expect(c3.calculate.bind(c3, '//;\n-1;-2')).to.throw('negative numbers not allowed -1, -2');
         done();
     });
 });
